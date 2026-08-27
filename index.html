@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA - Grupo 5</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 { color: #e94560; }
+        .card {
+            background: #16213e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Progressive Web Apps</h1>
+    <p>Grupo 5 - Programacion Web I</p>
+
+    <div class="card">
+        <h2>¿Que es una PWA?</h2>
+        <p>Una app web que se instala en tu celular sin tienda de apps y funciona sin internet.</p>
+    </div>
+
+    <div class="card">
+        <h2>Componentes clave</h2>
+        <p>Service Worker + Manifest.json + HTTPS</p>
+    </div>
+
+    <div class="card">
+        <h2>Integrantes</h2>
+        <p>Valencia - Mollo - Vega</p>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
