@@ -1,8 +1,8 @@
 const CACHE_NAME = 'pwa-grupo5-v1';
 const ARCHIVOS = [
-    '/',
-    '/index.html',
-    '/icon.png'
+    './',
+    './index.html',
+    './icon.png'
 ];
 
 // INSTALAR: guarda los archivos en el cache del celular
